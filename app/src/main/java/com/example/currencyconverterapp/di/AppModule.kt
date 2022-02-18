@@ -25,16 +25,6 @@ object AppModule {
     fun provideServicesRestApi(): WebApiMethods {
         return MainApplication.getInstance().networkController.initAPIService(WebApiMethods::class.java)
     }
-}
-
-@Module
-@InstallIn(SingletonComponent::class)
-abstract class RepoModule {
-    @Binds
-    abstract fun bindNetworkRepository(
-        networkRepositoryImp: DefaultMainRepository
-    ): MainRepository
-
 
     @Singleton // Tell Dagger-Hilt to create a singleton accessible everywhere in ApplicationCompenent (i.e. everywhere in the application)
     @Provides
@@ -53,5 +43,17 @@ abstract class RepoModule {
     @Singleton
     @Provides
     fun provideYourExchangeCurrencyDao(db: AppDatabase) = db.exchangeCurrencyDao()
+}
+
+@Module
+@InstallIn(SingletonComponent::class)
+abstract class RepoModule {
+    @Binds
+    abstract fun bindNetworkRepository(
+        networkRepositoryImp: DefaultMainRepository
+    ): MainRepository
 
 }
+
+
+
