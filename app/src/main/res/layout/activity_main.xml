@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="mCurrencyViewModel"
+            type="com.example.currencyconverterapp.viewmodel.BaseVM" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/edittextbackground"
+            android:hint="Input"
+            android:inputType="number"
+            android:onClick="@{()->mCurrencyViewModel.onEditTextVeiwLayoutManager()}"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_select_currency"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/edittextbackground"
+            android:clickable="true"
+            android:drawableRight="@drawable/arrowblack_dropdown"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:hint="Select Currency"
+            android:onClick="@{()->mCurrencyViewModel.onTextVeiwLayoutManager()}"
+            android:padding="@dimen/_7sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_13sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_converted_currencylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_select_currency"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_1sdp" />
+    </RelativeLayout>
+
+
+</layout>

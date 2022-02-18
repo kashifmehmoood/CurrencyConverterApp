@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Custom/CurrencyConverterApp/app/src/main/res/drawable/arrowblack_dropdown.xml" value="0.1075" />
+        <entry key="..\:/Custom/CurrencyConverterApp/app/src/main/res/drawable/edittextbackground.xml" value="0.1315" />
+        <entry key="..\:/Custom/CurrencyConverterApp/app/src/main/res/drawable/text_fields_bg.xml" value="0.1075" />
+        <entry key="..\:/Custom/CurrencyConverterApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Custom/CurrencyConverterApp/app/src/main/res/layout/converted_currency_item.xml" value="0.67" />
+        <entry key="..\:/Custom/CurrencyConverterApp/app/src/main/res/layout/currency_item.xml" value="0.15" />
+        <entry key="..\:/Custom/CurrencyConverterApp/app/src/main/res/layout/currency_list.xml" value="0.18" />
+        <entry key="..\:/Custom/CurrencyConverterApp/app/src/main/res/layout/custom_progress_dialog.xml" value="0.17" />
+        <entry key="..\:/Custom/CurrencyConverterApp/app/src/main/res/layout/layout_loading_dialog.xml" value="0.12" />
+        <entry key="..\:/Custom/CurrencyConverterApp/app/src/main/res/xml/network_security_config.xml" value="0.1332116788321168" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
